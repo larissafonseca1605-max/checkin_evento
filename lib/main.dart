@@ -227,17 +227,14 @@ class _PaginaCheckinState extends State<PaginaCheckin> {
                   padding: const EdgeInsets.all(16),
                   child: Column(
                     children: [
-                      const Icon(
-                        Icons.event,
-                        size: 42,
-                        color: Color(0xFF6750A4),
+                      Image.asset(
+                        'assets/evento.png',
+                        height: 110,
+                        width: double.infinity,
+                        fit: BoxFit.contain,
                       ),
-                      const Text(
-                        'SEMANA DA COMPUTAÇÃO 2026',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      const SizedBox(height: 12),
+                  
+                     const SizedBox(height: 12),
                       Text(
                         _nomeController.text.trim(),
                         style: const TextStyle(fontSize: 20),
